@@ -1,0 +1,148 @@
+html,body {
+    height: 100%;
+}
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #202c2f; */
+    background: -webkit-radial-gradient(#263238, #37474f, #455a64); /* Safari 5.1 - 6.0 */
+    background: -o-radial-gradient(#263238, #37474f, #455a64); /* Opera 11.6 - 12.0 */
+    background: -moz-radial-gradient(#263238, #37474f, #455a64); /* Firefox 3.6 - 15 */
+    background: radial-gradient(#263238, #37474f, #455a64); /* 标准的语法（必须放在最后） */
+}
+
+.header{
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    /* background: #f8f8f8; */
+    color: #ccc;
+    font-size: 24px;
+    /* box-shadow: 0 0 5px #ccc; */
+    border-bottom: 1px solid #666;
+}
+.container main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.main-container{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.showword{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    font-size: 14px;
+    color: #666;
+}
+.showword div{
+    font-size: 40px;
+    text-align: center;
+    color: #eee;
+}
+.showword p{
+    text-align: center;
+}
+.showword p span:nth-child(1){
+    margin-right: 30px;
+}
+.setword{
+    display: flex;
+    align-items: center;
+}
+.setword input{
+    flex: 1;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 20px;
+    margin-right: 20px;
+    outline: none;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    transition: all ease .5s;
+}
+.setword input:focus{
+    border-color: #00d9ff;
+    box-shadow: 0 0 5px 2px #00d9ff;
+}
+.setword input:hover{
+    border-color: #00d9ff;
+}
+.setword button{
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    border: 0;
+    background: #333;
+    color: #eee;
+    border-radius: 3px;
+    transition: all ease .5s;
+    cursor: pointer;
+    outline: none;
+}
+.setword button:hover{
+    background: #000;
+    color: #fff;
+}
+
+.tips{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    color: #999;
+}
+ul{
+    padding-left: 20px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    line-break: 40px;
+    font-size: 12px;
+    /* background: #f8f8f8; */
+    color: #666;
+    text-align: center;
+    border-top: 1px solid #666;
+}
+a{
+    text-decoration-line: none;
+}
+footer a{
+    color: #999;
+    margin-left: 10px;
+}
+.loading{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .65);
+    z-index: -1;
+    opacity: 0;
+    transition: all ease 2s;
+    color: #eee;
+}
+.loading.show{
+    z-index: 999;
+    opacity: 1;
+}
+.loading image{
+    margin-bottom: 50px;
+}
