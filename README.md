@@ -25,10 +25,17 @@
 
 1. 下载至本地
 2. 执行 `npm i` 安装依赖
+3. 部署合约，不部署也可以使用（使用我已经部署的合约），不部署合约直接跳至第5步。
 3. 终端当前目录下，`truffle compile`编译合约，接着部署合约，自行选择部署方式，[参考](https://www.ldsun.com/2018/02/22/ji-yu-react-trufflede-wan-zheng-zhi-neng-he-yue-gou-jian/)
 4. 合约部署完成后，得到合约地址，修改`src/App.js`中的合约地址`contractAddress`
 5. 终端当前目录下`npm start`启动前端
 6. 浏览器`localhost:3000`端口即可查看
+
+### 可能存在的问题
+
+在`linux`下运行项目，如果报错`react-magic`及`aphrodite`未找到，安装即可：
+
+`npm i react-magic aphrodite`
 
 ### 其他
 
